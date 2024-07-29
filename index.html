@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>AgEval</title>
+  <link rel="icon" type="image/x-icon" href="static/images/carousel4.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"> AgEval: A Benchmark for Zero-Shot and Few-Shot Plant Stress Phenotyping with Multimodal LLMs </h1>
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
+            <span class="author-name">Anonymous</span>
+</div>
+          <div class="publication-links">
+            <!-- Arxiv PDF link -->
+            
+            <span class="link-block">
+              <a href="https://github.com/arbab-ml/AgEval/tree/main" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </span>
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- banner image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/TeaserPhoto.png" alt="ArborCLIP">
+      <h2 class="subtitle has-text-centered">
+        <b>Overview of the AgEval benchmark</b> The figure showcases sample images across different types of tasks and specific problems,
+        representing diverse plant stress phenotyping challenges in agriculture.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End banner image -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+
+            Plant stress phenotyping traditionally relies on expert assessments and specialized models, limiting scalability in agriculture. Recent advances in multimodal large language models (LLMs) offer potential solutions to this challenge.
+            We present AgEval, a benchmark comprising 12 diverse plant stress phenotyping tasks, to evaluate these models’ capabilities. Our study assesses zero-shot and few-shot in-context learning performance of state-of-the-art models, including
+            Claude, GPT, Gemini, and LLaVA. Results show significant performance improvements with few-shot learning, with F1 scores increasing from 46.24% to 73.37% in 8-shot identification for the best-performing model. Few-shot examples from other
+            classes in the dataset have negligible or negative impacts, although having the exact category example helps to increase performance by 15.38%. We also quantify the consistency of model performance across different classes within each task, 
+            finding that the coefficient of variance (CV) ranges from 26.02% to 58.03% across models, implying that subject matter expertise is needed – of ’difficult’ classes – to achieve reliability in performance. AgEval establishes baseline metrics 
+            for multimodal LLMs in agricultural applications, offering insights into their promise for enhancing plant stress phenotyping at scale 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- data feature -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Dataset Features</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <!-- First Image -->
+          <div class="publication-image" id="image-container-1">
+            <img src="static/images/TreeMap.png" alt="Category Distribution" style="cursor: pointer; width: 80%; height: auto;">
+          </div>
+          <p class="description">
+            Visualization of AgEval Benchmark Dataset - This treemap illustrates the distribution of datasets used in AgEval for plant
+            stress identification, classification, and quantification. It contains subcategories, dataset names, and specific class names. Each rectangle
+            represents a unique class name, with its size proportional to the count of instances. The visualization demonstrates the diversity of plant
+            stress-related tasks covered by the AgEval framework across various crops and conditions.
+           
+          </p>
+          
+          <!-- Second Image -->
+          <div class="publication-image" id="image-container-2">
+            <img src="static/images/TreeMap.png" alt="Sample Image 2" style="cursor: pointer; width: 80%; height: auto;">
+          </div>
+          <p class="description">
+            Visualization of AgEval Benchmark Dataset - This treemap illustrates the distribution of datasets used in AgEval for plant
+            stress identification, classification, and quantification. It contains subcategories, dataset names, and specific class names. Each rectangle
+            represents a unique class name, with its size proportional to the count of instances. The visualization demonstrates the diversity of plant
+            stress-related tasks covered by the AgEval framework across various crops and conditions.
+           
+            
+          </p>
+          
+          <!-- Third Image -->
+          <div class="publication-image" id="image-container-3">
+            <img src="static/images/IndividualPlots.png" alt="Sample Image 3" style="cursor: pointer; width: 80%; height: auto;">
+          </div>
+          <p class="description">
+            Performance comparison on individual tasks of the AgLLM benchmark across different shot settings (0 to 8 shots) for top-4
+performing LLMs. The plots showcase how each task’s performance evolves with increasing shot counts, revealing model-specific and
+task-specific trends in few-shot learning capabilities
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- New Benchmark Subsection -->
+<section class="hero is-small" style="margin-bottom: 1rem;">
+  <div class="hero-body" style="padding-bottom: 1rem;">
+    <div class="container">
+      <h2 class="title is-4">New Benchmark</h2>
+      <div class="content">
+        <p>
+          From <b>AgEval</b>, we created three new benchmark datasets for lant Stress Phenotyping tasks with Multimodal LLMs. They are- <b>Identification (I)</b>, <b>Classification (C)</b> and <b>Quantification (Q)</b>.
+        </p>
+      </div>
+      <div class="table-container">
+        <table class="table is-striped is-fullwidth">
+          <thead>
+            <tr>
+              <th>Dataset</th>
+              <th>Category</th>
+              <th>Subcategory</th>
+              <th>Description</th>
+              <th># of Images</th>
+              <th># of Classes</th>
+              <th>Year</th>
+              <th>Location</th>
+              <th>Metric</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Durum Wheat</td>
+              <td>I</td>
+              <td>Seed Morphology</td>
+              <td>Wheat variety identification</td>
+              <td>333</td>
+              <td>3</td>
+              <td>2019</td>
+              <td>Turkey</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Soybean Seeds</td>
+              <td>I</td>
+              <td>Seed Morphology</td>
+              <td>Soybean quality prediction</td>
+              <td>5513</td>
+              <td>5</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Mango Leaf Disease</td>
+              <td>I</td>
+              <td>Foliar Stress</td>
+              <td>Mango leaf disease classification</td>
+              <td>4000</td>
+              <td>8</td>
+              <td>2022</td>
+              <td>Bangladesh</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Bean Leaf Lesions</td>
+              <td>I</td>
+              <td>Foliar Stress</td>
+              <td>Bean leaf lesion type classification</td>
+              <td>1171</td>
+              <td>3</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Soybean Diseases</td>
+              <td>I</td>
+              <td>Foliar Stress</td>
+              <td>Soybean stress identification</td>
+              <td>25,000</td>
+              <td>9</td>
+              <td>2016</td>
+              <td>United States</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Dangerous Insects</td>
+              <td>I</td>
+              <td>Pests</td>
+              <td>Harmful insects identification</td>
+              <td>1591</td>
+              <td>15</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>DeepWeeds</td>
+              <td>I</td>
+              <td>Pests</td>
+              <td>Weeds species identification</td>
+              <td>17,509</td>
+              <td>9</td>
+              <td>2019</td>
+              <td>Australia</td>
+              <td>F1</td>
+            </tr>
+            <tr>
+              <td>Yellow Rust 19</td>
+              <td>C</td>
+              <td>Disease Severity</td>
+              <td>Wheat yellow rust severity</td>
+              <td>20,421</td>
+              <td>6</td>
+              <td>2021</td>
+              <td>Turkey</td>
+              <td>NMAE</td>
+            </tr>
+            <tr>
+              <td>FUSARIUM 22</td>
+              <td>C</td>
+              <td>Disease Severity</td>
+              <td>Chickpea fusarium wilt severity</td>
+              <td>19,339</td>
+              <td>5</td>
+              <td>2023</td>
+              <td>Turkey</td>
+              <td>NMAE</td>
+            </tr>
+            <tr>
+              <td>IDC</td>
+              <td>C</td>
+              <td>Stress Tolerance</td>
+              <td>Soybean stress severity</td>
+              <td>1972</td>
+              <td>5</td>
+              <td>2015</td>
+              <td>United States</td>
+              <td>NMAE</td>
+            </tr>
+            <tr>
+              <td>InsectCount</td>
+              <td>Q</td>
+              <td>Pest Count</td>
+              <td>Insect count in images</td>
+              <td>1204</td>
+              <td>-</td>
+              <td>2021-2022</td>
+              <td>N/A</td>
+              <td>NMAE</td>
+            </tr>
+            <tr>
+              <td>PlantDoc</td>
+              <td>Q</td>
+              <td>Disease</td>
+              <td>Percentage of the leaf that is diseased</td>
+              <td>1176</td>
+              <td>-</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td>NMAE</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="image-container" style="text-align: center;">
+        <img src="static/images/BenchMark.png" alt="lifestages" style="width: 80%; height: auto;">
+        <p class="caption has-text-centered">
+          Performance comparison of models across 0-shot, 2-shot, and 8-shot settings on various datasets. F1 scores are shown directly,
+          while NMAE is inverted (100 - NMAE) for consistent visualization, with higher values indicating better performance
+        </p>
+      </div>
+      <div class="image-container" style="text-align: center;">
+        <img src="static/images/AgEvalBenchMark.png" alt="lifestages" style="width: 80%; height: auto;">
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+      @misc{PlaceHolder,
+      title={AgEval: A Benchmark for Zero-Shot and Few-Shot Plant Stress Phenotyping with Multimodal LLMs}, 
+      author=Anynomous},
+      year={2024},
+      eprint={2406.17720},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/PlaceHolder},}</code></pre>
+  </div>
+</section>
+
+<script>
+  document.getElementById('copy-button').addEventListener('click', function() {
+    const bibtexText = document.getElementById('bibtex-citation').textContent;
+    navigator.clipboard.writeText(bibtexText).then(function() {
+      alert('BibTeX citation copied to clipboard!');
+    }, function(err) {
+      console.error('Could not copy text: ', err);
+    });
+  });
+</script>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  </body>
+  </html>
