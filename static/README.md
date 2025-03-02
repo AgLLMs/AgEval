@@ -1,5 +1,5 @@
 
-# AgEval: A Benchmark for Zero-Shot and Few-Shot Plant Stress Phenotyping with Multimodal LLMs
+# Readme
 
 <!-- Banner links -->
 <div style="text-align:center;">
