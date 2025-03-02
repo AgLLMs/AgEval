@@ -79,45 +79,41 @@
             
           </div>
           <div class="publication-links">
+   <!-- Paper, Code, Benchmark, and Poster links in one row -->
+<div class="buttons is-centered" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
     <!-- Paper link -->
-    <span class="link-block">
-        <a href="http://arxiv.org/abs/2407.19617" target="_blank" class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-                <i class="fas fa-file-pdf"></i>
-            </span>
-            <span>Paper</span>
-        </a>
-    </span>
+    <a href="http://arxiv.org/abs/2407.19617" target="_blank" class="external-link button is-normal is-rounded is-dark">
+        <span class="icon">
+            <i class="fas fa-file-pdf"></i>
+        </span>
+        <span>Paper</span>
+    </a>
     
     <!-- Code link -->
-    <span class="link-block">
-        <a href="https://github.com/arbab-ml/AgEval" target="_blank" class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-                <i class="fab fa-github"></i>
-            </span>
-            <span>Code</span>
-        </a>
-    </span>
+    <a href="https://github.com/arbab-ml/AgEval" target="_blank" class="external-link button is-normal is-rounded is-dark">
+        <span class="icon">
+            <i class="fab fa-github"></i>
+        </span>
+        <span>Code</span>
+    </a>
     
     <!-- Benchmark link -->
-    <span class="link-block">
-        <a href="https://github.com/arbab-ml/AgEval?tab=readme-ov-file#data-loader-data_loaderpy" target="_blank" class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-                <i class="fas fa-chart-line"></i>
-            </span>
-            <span>Benchmark</span>
-        </a>
-    </span>
+    <a href="https://github.com/arbab-ml/AgEval?tab=readme-ov-file#data-loader-data_loaderpy" target="_blank" class="external-link button is-normal is-rounded is-dark">
+        <span class="icon">
+            <i class="fas fa-chart-line"></i>
+        </span>
+        <span>Benchmark</span>
+    </a>
+    
+    <!-- Poster link -->
+    <a href="static/images/wacv25-2776-final--poster.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+        <span class="icon">
+            <i class="fa-scroll"></i>
+        </span>
+        <span>Poster</span>
+    </a>
 </div>
-   <span class="link-block">
-        <a href="static/images/wacv25-2776-final--poster.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-                <i class="fa-scroll"></i>
-            </span>
-            <span>Poster</span>
-        </a>
-    </span>
-</div>
+
         </div>
       </div>
     </div>
@@ -143,26 +139,25 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3 has-text-centered">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-
             Plant stress phenotyping traditionally relies on expert assessments and specialized models, limiting scalability in agriculture. Recent advances in multimodal large language models (LLMs) offer potential solutions to this challenge.
             We present AgEval, a benchmark comprising 12 diverse plant stress phenotyping tasks, to evaluate these models’ capabilities. Our study assesses zero-shot and few-shot in-context learning performance of state-of-the-art models, including
             Claude, GPT, Gemini, and LLaVA. Results show significant performance improvements with few-shot learning, with F1 scores increasing from 46.24% to 73.37% in 8-shot identification for the best-performing model. Few-shot examples from other
             classes in the dataset have negligible or negative impacts, although having the exact category example helps to increase performance by 15.38%. We also quantify the consistency of model performance across different classes within each task, 
-            finding that the coefficient of variance (CV) ranges from 26.02% to 58.03% across models, implying that subject matter expertise is needed – of ’difficult’ classes – to achieve reliability in performance. AgEval establishes baseline metrics 
-            for multimodal LLMs in agricultural applications, offering insights into their promise for enhancing plant stress phenotyping at scale 
+            finding that the coefficient of variance (CV) ranges from 26.02% to 58.03% across models, implying that subject matter expertise is needed – of ‘difficult’ classes – to achieve reliability in performance. AgEval establishes baseline metrics 
+            for multimodal LLMs in agricultural applications, offering insights into their promise for enhancing plant stress phenotyping at scale.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- Teaser video-->
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
+    <div class="hero-body has-text-centered">
       <div class="video-container">
         <iframe 
           width="100%" 
@@ -175,79 +170,60 @@
         </iframe>
       </div>
       <h2 class="subtitle has-text-centered">
-       IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025</h2>
+       IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025
+      </h2>
     </div>
   </div>
 </section>
-<!-- End teaser vid -->
 
-
-<!-- data feature -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3" style="margin: 0;">Dataset Features</h2>
+      <h2 class="title is-3 has-text-centered">Dataset Features</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <!-- First Image -->
           <div class="publication-image" id="image-container-1">
             <img src="static/images/TreeMap.png" alt="Category Distribution" style="cursor: pointer; width: 100%; height: auto;">
           </div>
           <p class="description">
             Visualization of AgEval Benchmark Dataset - This treemap illustrates the distribution of datasets used in AgEval for plant
-            stress identification, classification, and quantification. It contains subcategories, dataset names, and specific class names. Each rectangle
-            represents a unique class name, with its size proportional to the count of instances. The visualization demonstrates the diversity of plant
-            stress-related tasks covered by the AgEval framework across various crops and conditions.
-           
+            stress identification, classification, and quantification.
           </p>
-          
-          
-          
-          <!-- Third Image -->
           <div class="publication-image" id="image-container-3">
             <img src="static/images/IndividualPlots.png" alt="Sample Image 3" style="cursor: pointer; width: 80%; height: auto;">
           </div>
           <p class="description">
-            Performance comparison on individual tasks of the AgLLM benchmark across different shot settings (0 to 8 shots) for top-4
-performing LLMs. The plots showcase how each task’s performance evolves with increasing shot counts, revealing model-specific and
-task-specific trends in few-shot learning capabilities
+            Performance comparison on individual tasks of the AgLLM benchmark across different shot settings (0 to 8 shots) for top-4 performing LLMs.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-
-
-
-<!-- New Benchmark Subsection -->
 <section class="hero is-small" style="margin-bottom: 1rem;">
   <div class="hero-body" style="padding-bottom: 1rem;">
     <div class="container">
-      <h2 class="title is-4">New Benchmark</h2>
-      <div class="content">
+      <h2 class="title is-4 has-text-centered">New Benchmark</h2>
+      <div class="content has-text-centered">
         <p>
           From <b>AgEval</b>, we created three new benchmark datasets for plant Stress Phenotyping tasks with Multimodal LLMs. <br><br>
-          They are- <b>Identification (I)</b>, <b>Classification (C)</b> and <b>Quantification (Q)</b>.
+          They are - <b>Identification (I)</b>, <b>Classification (C)</b>, and <b>Quantification (Q)</b>.
         </p>
       </div>
-      
-      <div class="image-container" style="text-align: center;">
+      <div class="image-container has-text-centered">
         <img src="static/images/BenchMark.png" alt="lifestages" style="width: 80%; height: auto;">
         <p class="caption has-text-centered">
-          Performance comparison of models across 0-shot, 2-shot, and 8-shot settings on various datasets. F1 scores are shown directly,
-          while NMAE is inverted (100 - NMAE) for consistent visualization, with higher values indicating better performance
+          Performance comparison of models across 0-shot, 2-shot, and 8-shot settings on various datasets.
         </p>
       </div>
-      <div class="image-container" style="text-align: center;">
+      <div class="image-container has-text-centered">
         <img src="static/images/AgEvalBenchMark.png" alt="lifestages" style="width: 80%; height: auto;">
-      
       </div>
     </div>
   </div>
 </section>
+
 
 
 
