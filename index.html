@@ -410,65 +410,192 @@
         </table>
     </div>
 
-    <div class="table-container">
-        <h3>Few Shot Learning: Impact of having at least 1 example with same category as ground truth</h3>
-        <table>
-            <caption>Table 3: Few Shot Learning Impact</caption>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Baseline</th>
-                    <th colspan="5">Bullseye Shots</th>
-                    <th colspan="5">Non-Bullseye Shots</th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th>0-shot</th>
-                    <th>1-shot</th>
-                    <th>2-shot</th>
-                    <th>4-shot</th>
-                    <th>8-shot</th>
-                    <th>Avg. Impact</th>
-                    <th>1-shot</th>
-                    <th>2-shot</th>
-                    <th>4-shot</th>
-                    <th>8-shot</th>
-                    <th>Avg. Impact</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Durum Wheat</td>
-                    <td>51.18</td>
-                    <td class="light-green">+31.10</td>
-                    <td>+23.74</td>
-                    <td>+28.02</td>
-                    <td>+30.67</td>
-                    <td><b>+28.38</b></td>
-                    <td>-01.74</td>
-                    <td>+01.03</td>
-                    <td>-04.39</td>
-                    <td class="light-red">-11.85</td>
-                    <td><b>-04.24</b></td>
-                </tr>
-                <tr>
-                    <td>Soybean Seeds</td>
-                    <td>27.95</td>
-                    <td class="light-green">+27.10</td>
-                    <td>+15.54</td>
-                    <td>+13.79</td>
-                    <td>+21.77</td>
-                    <td><b>+19.55</b></td>
-                    <td class="light-red">-01.48</td>
-                    <td>+05.57</td>
-                    <td>+05.44</td>
-                    <td>+09.20</td>
-                    <td><b>+04.68</b></td>
-                </tr>
-                <!-- Add additional rows as necessary -->
-            </tbody>
-        </table>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Few Shot Learning Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .green-bg {
+            background-color: #d4edda;
+        }
+        .red-bg {
+            background-color: #f8d7da;
+        }
+        .yellow-bg {
+            background-color: #fff3cd;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .title {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title">
+        <h2>Few Shot Learning: Impact of having at least 1 example with same category as ground truth (Bullseye example).</h2>
+        <p>Highest values are highlighted in light green, Lowest values in light red across 1, 2, 4, and 8-shot settings for both Bullseye and Non-Bullseye. Average Impact values are in <strong>bold</strong>.</p>
     </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Baseline</th>
+                <th colspan="5">Bullseye Shots</th>
+                <th colspan="5">Non-Bullseye Shots</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>0-shot</th>
+                <th>1-shot</th>
+                <th>2-shot</th>
+                <th>4-shot</th>
+                <th>8-shot</th>
+                <th>Avg. Impact</th>
+                <th>1-shot</th>
+                <th>2-shot</th>
+                <th>4-shot</th>
+                <th>8-shot</th>
+                <th>Avg. Impact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Durum Wheat</td>
+                <td>51.18</td>
+                <td class="green-bg">+31.10</td>
+                <td>+23.74</td>
+                <td>+28.02</td>
+                <td>+30.67</td>
+                <td class="bold">+28.38</td>
+                <td>-01.74</td>
+                <td>+01.03</td>
+                <td>-04.39</td>
+                <td class="red-bg">-11.85</td>
+                <td class="bold">-04.24</td>
+            </tr>
+            <tr>
+                <td>Soybean Seeds</td>
+                <td>27.95</td>
+                <td class="green-bg">+27.10</td>
+                <td>+15.54</td>
+                <td>+13.79</td>
+                <td>+21.77</td>
+                <td class="bold">+19.55</td>
+                <td class="red-bg">-01.48</td>
+                <td>+05.57</td>
+                <td>+05.44</td>
+                <td>+09.20</td>
+                <td class="bold">+04.68</td>
+            </tr>
+            <tr>
+                <td>Mango Leaf Disease</td>
+                <td>44.76</td>
+                <td>+22.61</td>
+                <td>+22.90</td>
+                <td>+17.34</td>
+                <td class="green-bg">+28.30</td>
+                <td class="bold">+22.79</td>
+                <td>-02.02</td>
+                <td class="red-bg">-02.96</td>
+                <td>-00.40</td>
+                <td>+03.31</td>
+                <td class="bold">-00.52</td>
+            </tr>
+            <tr>
+                <td>Bean Leaf Lesions</td>
+                <td>67.53</td>
+                <td class="green-bg">+11.46</td>
+                <td>+05.01</td>
+                <td>+07.67</td>
+                <td>+06.90</td>
+                <td class="bold">+07.76</td>
+                <td>-06.08</td>
+                <td>-05.61</td>
+                <td class="red-bg">-09.65</td>
+                <td>-07.87</td>
+                <td class="bold">-07.30</td>
+            </tr>
+            <tr>
+                <td>Soybean Diseases</td>
+                <td>12.23</td>
+                <td class="green-bg">+49.05</td>
+                <td>+17.71</td>
+                <td>+09.26</td>
+                <td>+06.54</td>
+                <td class="bold">+20.64</td>
+                <td class="red-bg">+00.26</td>
+                <td>+06.98</td>
+                <td>+04.95</td>
+                <td>+11.73</td>
+                <td class="bold">+05.98</td>
+            </tr>
+            <tr>
+                <td>Dangerous Insects</td>
+                <td>75.83</td>
+                <td>-12.05</td>
+                <td>-10.92</td>
+                <td class="red-bg">-12.67</td>
+                <td>-04.15</td>
+                <td class="bold">-09.95</td>
+                <td>-00.92</td>
+                <td>+02.04</td>
+                <td class="green-bg">+03.37</td>
+                <td>+01.90</td>
+                <td class="bold">+01.60</td>
+            </tr>
+            <tr>
+                <td>DeepWeeds</td>
+                <td>30.23</td>
+                <td>+22.37</td>
+                <td class="green-bg">+24.79</td>
+                <td>+13.85</td>
+                <td>+12.86</td>
+                <td class="bold">+18.47</td>
+                <td>-02.03</td>
+                <td class="red-bg">-03.32</td>
+                <td>-00.35</td>
+                <td>+01.55</td>
+                <td class="bold">-01.04</td>
+            </tr>
+            <tr>
+                <td class="bold">Average</td>
+                <td>44.24</td>
+                <td class="green-bg">+21.66</td>
+                <td>+14.11</td>
+                <td>+11.04</td>
+                <td>+14.70</td>
+                <td class="bold">+15.38</td>
+                <td class="red-bg">-02.00</td>
+                <td>+00.53</td>
+                <td>-00.15</td>
+                <td>+01.14</td>
+                <td class="bold">-00.12</td>
+            </tr>
+        </tbody>
+    </table>
 
 
 
